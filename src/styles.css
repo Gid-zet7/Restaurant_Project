@@ -234,3 +234,97 @@ nav li {
 .fade_in.appear {
     opacity: 1;
 }
+
+/* ---------Third Section----------- */
+
+.third-section {
+    --background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+    background: var(--background);
+}
+
+
+.from_left {
+    width: 100vw;
+    background-image: url('../src/Images/markus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10em;
+    transform: translateX(-50%);
+}
+
+
+.from_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    height: 100%;
+    padding: 1em;
+    transform: translateX(50%);
+}
+
+.from_right>p {
+    font-family: 'Dongle', 'sans-serif';
+}
+
+
+.from-right {
+    width: 100vw;
+    background-image: url('../src/Images/paul.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10em;
+    transform: translateX(50%);
+}
+
+
+.from-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1em;
+    font-size: 1.2em;
+    transform: translateX(-50%);
+}
+
+.from-left>p {
+    font-family: 'Dongle', 'sans-serif';
+}
+
+.from_left,
+.from_right {
+    transition:
+        opacity 250ms ease-in,
+        transform 400ms ease-in;
+    opacity: 0;
+}
+
+.from_left.appear,
+.from_right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.from-left,
+.from-right {
+    transition:
+        opacity 250ms ease-in,
+        transform 400ms ease-in;
+    opacity: 0;
+}
+
+.from-left.appear,
+.from-right.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
