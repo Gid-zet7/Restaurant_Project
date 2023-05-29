@@ -144,3 +144,27 @@ nav li {
 #home_btn {
     user-select: none;
 }
+
+/* ----------First section----------- */
+
+.first-section {
+    position: relative;
+    background: url('../src/Images/marek.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+.text_header {
+    position: absolute;
+    color: var(--background);
+    font-size: 90px;
+    font-family: 'Great vibes', 'cursive';
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
