@@ -1,5 +1,5 @@
 import mainContent from "./mainContent";
-import createNavbar from "./Components/navBar";
+import createNavbar from "./Components/Navbar";
 
 function pageLoad() {
   const container = document.querySelector(".container");

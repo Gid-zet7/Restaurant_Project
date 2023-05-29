@@ -1,5 +1,5 @@
-import loadHome from "./home";
-import loadMenu from "./menu";
+import loadHome from "./Home";
+import loadMenu from "./Menu";
 
 const createNavbar = () => {
   // const container = document.querySelector(".container");
