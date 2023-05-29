@@ -3,6 +3,7 @@ import Markus from "../Images/markus.jpg";
 import Paul from "../Images/paul.jpg";
 import Hop from "../Images/hop.svg";
 import Stand from "../Images/stand.svg";
+import fadeinAndNavChange from "../fadeinAndNavChange";
 
 const home = () => {
   // const container = document.querySelector(".container");
