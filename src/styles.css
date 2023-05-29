@@ -328,3 +328,105 @@ nav li {
     transform: translateX(0);
     opacity: 1;
 }
+
+/* ---------Menu content--------- */
+
+.head_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 3em 5em 3em;
+    font-family: 'Great vibes', 'cursive';
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    margin: 5em;
+    width: 60%;
+    height: 100%;
+    /* box-shadow: 0 0 15px rgba(0, 0, 0, .20); */
+}
+
+.maxycard_image {
+    background: url('../src/Images/paul.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10em;
+    max-width: 100%;
+}
+
+.card_text {
+    padding: 2rem;
+    background: #e9eb9c;
+}
+
+.card_text>h1 {
+    font-family: 'Rowdies', 'cursive';
+}
+
+.card_text>p {
+    font-family: 'Dongle', 'sans-serif';
+}
+
+.card_price {
+    font-size: 2rem;
+    color: #444;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+
+.card_btn {
+    cursor: pointer;
+    display: inline-block;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 25px;
+}
+
+.card_btn:hover {
+    background: var(--background);
+    color: black;
+}
+
+.codedcard_image {
+    background: url('../src/Images/markus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10em;
+    /* min-height: 100%; */
+}
+
+.justme_image {
+    background: url('../src/Images/markus.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10em;
+    /* min-height: 100%; */
+}
+
+.bonus_div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.bonus {
+    background: url('../src/Images/chef.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    padding: 10em;
+    min-height: 100%;
+}
