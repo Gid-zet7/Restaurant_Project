@@ -168,3 +168,69 @@ nav li {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+/* --------Second content--------- */
+
+.content {
+    --font-size: calc(.5em + .5vw);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 5em 2em 5em 2em;
+    font-size: var(--font-size);
+}
+
+.content > h1 {
+    position: relative;
+    font-family: 'Rowdies', 'cursive';
+}
+
+.content > h1::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    position: absolute;
+    left: 3em;
+    bottom: -.5em;
+    background: var(--background);
+}
+
+.content > p {
+    font-family: 'Dongle', 'sans-serif';
+    font-size: 2em;
+}
+
+/* .banny_header {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* .markus_img {
+    width: 100%;
+} */
+
+/* .paul_img {
+    width: 100%;
+} */
+
+/* .inside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size);
+} */
+
+
+
+.fade_in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+}
+
+.fade_in.appear {
+    opacity: 1;
+}
