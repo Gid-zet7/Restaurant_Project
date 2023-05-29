@@ -1,0 +1,25 @@
+:root {
+    
+    --background: rgba(255, 253, 130, 0.85);
+    --font-size: calc(.9em + .5vw);
+    --line-height: calc(1.2em + 1vw);
+    font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-weight: 400;
+    overflow-x: hidden;
+    /* overflow: hidden; */
+
+
+}
