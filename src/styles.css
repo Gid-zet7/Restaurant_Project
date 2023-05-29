@@ -1,5 +1,5 @@
 :root {
-    
+
     --background: rgba(255, 253, 130, 0.85);
     --font-size: calc(.9em + .5vw);
     --line-height: calc(1.2em + 1vw);
@@ -22,4 +22,125 @@ body {
     /* overflow: hidden; */
 
 
+}
+
+/* navigation styles start here */
+
+header {
+    background: var(--background);
+    text-align: center;
+    position: fixed;
+    z-index: 999;
+    /*This ensures the header is always on top of everyhing else */
+    width: 100%;
+    color: #fff;
+    font-size: calc(.3em + .7vw);
+    line-height: calc(2em + 2vw);
+}
+
+/* .logo-scrolled {
+    --text: #ffffff;
+
+    color: var(--text);
+} */
+
+/* #home_btn a {
+    text-decoration: none;
+    color: #fff;
+} */
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: #fff;
+    height: 2px;
+    width: 2em;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: var(--background);
+    width: 100%;
+    /* display: none; */
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 400ms ease-in-out;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+
+nav li {
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+nav li {
+
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in-out;
+}
+
+.nav-toggle:checked~nav {
+    /* display: block; */
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav li {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+}
+
+.nav-scrolled {
+    --text: #f5f5f5;
+    --background: #272525;
+
+    color: var(--text);
+    background: var(--background);
+    box-shadow: 0 3px 20px rgba(black, 0.2);
+}
+
+#home_btn {
+    user-select: none;
 }
