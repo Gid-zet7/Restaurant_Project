@@ -1,17 +1,22 @@
 {
   "name": "restaurant_project",
   "version": "1.0.0",
+  "homepage": "https://Gid-zet7.github.io/Restaurant_Project",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack"
+    "build": "webpack --mode=development",
+    "watch": "webpack --progress --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Gidzet",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "gh-pages": "^5.0.0",
     "style-loader": "^3.3.3",
     "webpack": "^5.84.1",
     "webpack-cli": "^5.1.1"

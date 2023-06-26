@@ -297,7 +297,7 @@ nav li {
     transform: translateX(-50%);
 }
 
-.from-left>p {
+.from-left > p {
     font-family: 'Dongle', 'sans-serif';
 }
 
@@ -335,23 +335,57 @@ nav li {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5em 3em 5em 3em;
+    margin: 5em 3em 2em 3em;
     font-family: 'Great vibes', 'cursive';
 }
 
 .cards {
+    --font-size: calc(1em + .8vw);
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 2rem;
+    font-family: 'Dongle', 'sans-serif';
+    font-size: var(--font-size);
 }
 
-.card {
+.rice-dish p span {
+    color: red;
+}
+
+.rice-dish p span + span {
+    color: green;
+}
+
+.rice-dish ul li span {
+    color: green;
+}
+
+.chilli-only {
+    color: red !important; 
+}
+
+.special-sat ul li span {
+    color: green;
+}
+
+.fries-menu ul li span {
+    color: green;
+}
+
+.small-chops ul li span {
+    color: green;
+}
+
+.extra ul li span {
+    color: green;
+}
+
+/* .card {
     display: flex;
     margin: 5em;
     width: 60%;
     height: 100%;
-    /* box-shadow: 0 0 15px rgba(0, 0, 0, .20); */
+    box-shadow: 0 0 15px rgba(0, 0, 0, .20);
 }
 
 .maxycard_image {
@@ -403,7 +437,7 @@ nav li {
     background-repeat: no-repeat;
     background-position: center;
     padding: 10em;
-    /* min-height: 100%; */
+    min-height: 100%;
 }
 
 .justme_image {
@@ -412,8 +446,8 @@ nav li {
     background-repeat: no-repeat;
     background-position: center;
     padding: 10em;
-    /* min-height: 100%; */
-}
+    min-height: 100%;
+} */
 
 .bonus_div {
     display: flex;
@@ -558,8 +592,8 @@ nav li {
 
 }
 
-@media screen and (max-width: 1151px) {
-    /* ---------Menu content--------- */
+/* @media screen and (max-width: 1151px) {
+    ---------Menu content---------
 
     .card {
         flex-direction: column;
@@ -576,4 +610,4 @@ nav li {
     .card_price {
         margin: 1.2rem 0 1.2rem 0;
     }
-}
+} */

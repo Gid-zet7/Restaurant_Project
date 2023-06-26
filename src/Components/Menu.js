@@ -3,6 +3,8 @@
 import Markus from "../Images/markus.jpg";
 import Paul from "../Images/paul.jpg";
 import Chef from "../Images/chef.svg";
+import BannycueColor from "../Images/BannycueColor.svg";
+import Design from "../Images/design.svg";
 
 const menuPage = () => {
   // const container = document.querySelector(".container");
@@ -10,31 +12,132 @@ const menuPage = () => {
   const firstSection = document.createElement("div");
   const textHeader = document.createElement("h1");
   const menuDiv = document.createElement("div");
-  const textTitle = document.createElement("h1");
+  const textTitle = document.createElement("div");
   const cards = document.createElement("div");
-  const maxyCard = document.createElement("div");
-  const maxyCardImage = document.createElement("div");
-  const maxyCardText = document.createElement("div");
-  const maxyCardTitle = document.createElement("h1");
-  const maxyCardPara = document.createElement("p");
-  const maxyCardPrice = document.createElement("p");
-  const maxyCardBtn = document.createElement("a");
-  const codedCard = document.createElement("div");
-  const codedCardImage = document.createElement("div");
-  const codedCardText = document.createElement("div");
-  const codedCardTitle = document.createElement("h1");
-  const codedCardPara = document.createElement("p");
-  const codedCardPrice = document.createElement("p");
-  const codedCardBtn = document.createElement("a");
-  const justMe = document.createElement("div");
-  const justMeImage = document.createElement("div");
-  const justMeText = document.createElement("div");
-  const justMeTitle = document.createElement("h1");
-  const justMePara = document.createElement("p");
-  const justMePrice = document.createElement("p");
-  const justMeBtn = document.createElement("a");
   const bonusDiv = document.createElement("div");
   const bonusImage = document.createElement("div");
+
+  const riceDishMenu = document.createElement("div");
+  const menuTitle = document.createElement("h1");
+  const menuPara = document.createElement("p");
+  const riceDishUl = document.createElement("ul");
+
+  const firstRiceLi = document.createElement("li");
+  const secondRiceLi = document.createElement("li");
+  const thirdRiceLi = document.createElement("li");
+  const fourthRiceLi = document.createElement("li");
+  const fifthRiceLi = document.createElement("li");
+  const sixthRiceLi = document.createElement("li");
+  const riceLine = document.createElement("hr");
+
+  const specialSatMenu = document.createElement("div");
+  const satTitle = document.createElement("h1");
+  const specialSatUl = document.createElement("ul");
+  const firstSatLi = document.createElement("li");
+  const secondSatLi = document.createElement("li");
+  const thirdSatLi = document.createElement("li");
+  const fourthSatLi = document.createElement("li");
+  const specLine = document.createElement("hr");
+
+  const fries = document.createElement("div");
+  const friesMenu = document.createElement("div");
+  const friesTitle = document.createElement("h1");
+  const friesUl = document.createElement("ul");
+  const firstFriesLi = document.createElement("li");
+  const secondFriesLi = document.createElement("li");
+
+  const smallChopsMenu = document.createElement("div");
+  const smallChopTitle = document.createElement("h1");
+  const smallChopsUl = document.createElement("ul");
+  const firstChopsLi = document.createElement("li");
+  const secondChopsLi = document.createElement("li");
+  const friesLine = document.createElement("hr");
+
+  const extraMenu = document.createElement("div");
+  const extraTitle = document.createElement("h1");
+  const extraUl = document.createElement("ul");
+  const firstExtraLi = document.createElement("li");
+  const secondExtraLi = document.createElement("li");
+  const thirdExtraLi = document.createElement("li");
+  const fourthExraLi = document.createElement("li");
+
+  riceDishMenu.classList.add("rice-dish");
+  specialSatMenu.classList.add("special-sat");
+  fries.classList.add("fries");
+  friesMenu.classList.add("fries-menu");
+  smallChopsMenu.classList.add("small-chops");
+  extraMenu.classList.add("extra");
+
+  menuTitle.textContent = "RICE DISHES";
+  satTitle.textContent = "SPECIAL SATURDAY";
+  friesTitle.textContent = "FRIES";
+  smallChopTitle.textContent = "SMALL CHOPS";
+  extraTitle.textContent = "EXTRA";
+
+  menuPara.innerHTML = `Served with <span>chilli</span> and <span>toast veg</span> and grilled protein`;
+  firstRiceLi.innerHTML = "Coconut fried rice";
+  secondRiceLi.innerHTML = "Vegetable rice";
+  thirdRiceLi.innerHTML = "Plain rice";
+  fourthRiceLi.innerHTML = `<span>GHS 15.00</span>-pack of rice dishes options served with <span>grilled chicken</span> and <span class="chilli-only">chilli only</span> is available`;
+  fifthRiceLi.innerHTML = `<span>GHS 30.00</span>-Assorted fried rice`;
+  sixthRiceLi.innerHTML = `<span>GHS 35.00</span>-Assorted fried rice with toast veg`;
+
+  firstSatLi.innerHTML = `<span>GHS 20.00</span>-Grilled tilapia & Banku`;
+  secondSatLi.innerHTML = `<span>GHS 250.00</span>-Family size package (full grilled rabbit + fried rice + toast veg)`;
+  thirdSatLi.innerHTML = `<span>GHS 150.00</span>-Full grilled rabbit `;
+  fourthSatLi.innerHTML = `<span>GHS 90.00</span>-Half grilled rabbit `;
+
+  firstFriesLi.innerHTML = `<span>GHS 30.00</span>-Grilled rabbit and yam chips `;
+  secondFriesLi.innerHTML = `<span>GHS 20.00</span>-Grilled chicken and yam chips`;
+  firstChopsLi.innerHTML = `<span>GHS 10.00</span>-Rabbit Kebab`;
+  secondChopsLi.innerHTML = `<span>GHS 10.00</span>-Chicken Kebab`;
+
+  firstExtraLi.innerHTML = `<span>GHS 20.00</span>-Grilled rabbit`;
+  secondExtraLi.innerHTML = `<span>GHS 10.00</span>-Grilled chicken`;
+  thirdExtraLi.innerHTML = `<span>GHS 5.00</span>-Toast Veg`;
+  fourthExraLi.innerHTML = `<span>GHS 12.00</span>-Grilled Tilapia`;
+
+  riceDishUl.appendChild(firstRiceLi);
+  riceDishUl.appendChild(secondRiceLi);
+  riceDishUl.appendChild(thirdRiceLi);
+  riceDishUl.appendChild(fourthRiceLi);
+  riceDishUl.appendChild(fifthRiceLi);
+  riceDishUl.appendChild(sixthRiceLi);
+
+  specialSatMenu.appendChild(satTitle);
+  specialSatUl.appendChild(firstSatLi);
+  specialSatUl.appendChild(secondSatLi);
+  specialSatUl.appendChild(thirdSatLi);
+  specialSatUl.appendChild(fourthSatLi);
+
+  friesUl.appendChild(firstFriesLi);
+  friesUl.appendChild(secondFriesLi);
+  friesMenu.appendChild(friesTitle);
+  friesMenu.appendChild(friesUl);
+
+  smallChopsUl.appendChild(firstChopsLi);
+  smallChopsUl.appendChild(secondChopsLi);
+  smallChopsMenu.appendChild(smallChopTitle);
+  smallChopsMenu.appendChild(smallChopsUl);
+
+  extraMenu.appendChild(extraTitle);
+  extraUl.appendChild(firstExtraLi);
+  extraUl.appendChild(secondExtraLi);
+  extraUl.appendChild(thirdExtraLi);
+  extraUl.appendChild(fourthExraLi);
+
+  riceDishMenu.appendChild(menuTitle);
+  riceDishMenu.appendChild(menuPara);
+  riceDishMenu.appendChild(riceDishUl);
+  riceDishMenu.appendChild(riceLine);
+  specialSatMenu.appendChild(specialSatUl);
+  specialSatMenu.appendChild(specLine);
+  fries.appendChild(friesMenu);
+  fries.appendChild(smallChopsMenu);
+  fries.appendChild(friesLine);
+  extraMenu.appendChild(extraUl);
+
+  // riceDishMenu.appendChild(riceDishMenu);
 
   menu.classList.add("menu");
   firstSection.classList.add("first-section");
@@ -42,45 +145,20 @@ const menuPage = () => {
   textHeader.classList.add("text_header");
   menuDiv.classList.add("head_container");
   cards.classList.add("cards");
-  maxyCard.classList.add("card");
-  maxyCardImage.classList.add("maxycard_image");
-  maxyCardText.classList.add("card_text");
-  maxyCardPrice.classList.add("card_price");
-  maxyCardBtn.classList.add("card_btn");
-  codedCard.classList.add("card");
-  codedCardImage.classList.add("codedcard_image");
-  codedCardText.classList.add("card_text");
-  codedCardPrice.classList.add("card_price");
-  codedCardBtn.classList.add("card_btn");
-  justMe.classList.add("card");
-  justMeImage.classList.add("maxycard_image");
-  justMeText.classList.add("card_text");
-  justMePrice.classList.add("card_price");
-  justMeBtn.classList.add("card_btn");
+
   bonusDiv.classList.add("bonus_div");
   bonusImage.classList.add("bonus");
 
-  textTitle.textContent = "Grab a bite of our Tasty grilled rabbit";
-  maxyCardTitle.textContent = "Maxy Pack";
-  maxyCardPara.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum fugit ea molestiae perspiciatis, voluptates deleniti maiores, sunt aliquid perferendis atque officia dolore. Dolorem incidunt tempora tenetur sit id nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laborum totam quibusdam quos vero quia incidunt. Iste inventore debitis,";
-  maxyCardPrice.textContent = "Only 39.98";
-  maxyCardBtn.textContent = "Make order now";
-
-  codedCardTitle.textContent = "Coded Pack";
-  codedCardPara.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum fugit ea molestiae perspiciatis, voluptates deleniti maiores, sunt aliquid perferendis atque officia dolore. Dolorem incidunt tempora tenetur sit id nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laborum totam quibusdam quos vero quia incidunt. Iste inventore debitis,";
-  codedCardPrice.textContent = "Only 19.98";
-  codedCardBtn.textContent = "Make order now";
-
-  justMeTitle.textContent = "Just-me Pack";
-  justMePara.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla earum fugit ea molestiae perspiciatis, voluptates deleniti maiores, sunt aliquid perferendis atque officia dolore. Dolorem incidunt tempora tenetur sit id nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, laborum totam quibusdam quos vero quia incidunt. Iste inventore debitis,";
-  justMePrice.textContent = "Only 10.98";
-  justMeBtn.textContent = "Make order now";
-
   const chef = new Image();
   chef.src = Chef;
+
+  const bannycueLogo = new Image();
+  bannycueLogo.src = BannycueColor;
+  bannycueLogo.classList.add("banny-logo");
+
+  const design = new Image();
+  design.src = Design;
+  design.classList.add("design");
 
   const paul = new Image();
   paul.src = Paul;
@@ -91,30 +169,14 @@ const menuPage = () => {
   markus.classList.add("markus_img");
 
   firstSection.appendChild(textHeader);
+  textTitle.appendChild(bannycueLogo);
   menuDiv.appendChild(textTitle);
-  maxyCard.appendChild(maxyCardImage);
-  maxyCardText.appendChild(maxyCardTitle);
-  maxyCardText.appendChild(maxyCardPara);
-  maxyCardText.appendChild(maxyCardPrice);
-  maxyCardText.appendChild(maxyCardBtn);
-  maxyCard.appendChild(maxyCardText);
-  codedCard.appendChild(codedCardImage);
-  codedCardText.appendChild(codedCardTitle);
-  codedCardText.appendChild(codedCardPara);
-  codedCardText.appendChild(codedCardPrice);
-  codedCardText.appendChild(codedCardBtn);
-  codedCard.appendChild(codedCardText);
-  justMe.appendChild(justMeImage);
-  justMeText.appendChild(justMeTitle);
-  justMeText.appendChild(justMePara);
-  justMeText.appendChild(justMePrice);
-  justMeText.appendChild(justMeBtn);
-  justMe.appendChild(justMeText);
   bonusDiv.appendChild(bonusImage);
 
-  cards.appendChild(maxyCard);
-  cards.appendChild(codedCard);
-  cards.appendChild(justMe);
+  cards.appendChild(riceDishMenu);
+  cards.appendChild(specialSatMenu);
+  cards.appendChild(fries);
+  cards.appendChild(extraMenu);
 
   menu.appendChild(firstSection);
   menu.appendChild(menuDiv);
