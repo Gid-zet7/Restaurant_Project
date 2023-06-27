@@ -1,13 +1,13 @@
-// import createNavbar from "./navBar";
-// import Marek from "./marek.jpg";
 import Markus from "../Images/markus.jpg";
 import Paul from "../Images/paul.jpg";
 import Chef from "../Images/chef.svg";
 import BannycueColor from "../Images/BannycueColor.svg";
 import Design from "../Images/design.svg";
+import fadeinAndNavChange from "../fadeinAndNavChange";
 
 const menuPage = () => {
   // const container = document.querySelector(".container");
+
   const menu = document.createElement("div");
   const firstSection = document.createElement("div");
   const textHeader = document.createElement("h1");
@@ -168,6 +168,11 @@ const menuPage = () => {
   markus.src = Markus;
   markus.classList.add("markus_img");
 
+  // const riceImg = document.createElement("img");
+  // riceImg.classList.add("rice-img");
+  // riceImg.appendChild(paul);
+  // riceDishMenu.appendChild(riceImg);
+
   firstSection.appendChild(textHeader);
   textTitle.appendChild(bannycueLogo);
   menuDiv.appendChild(textTitle);
@@ -190,6 +195,7 @@ function loadMenu() {
   const contents = document.querySelector(".contents");
   contents.textContent = "";
   contents.appendChild(menuPage());
+  fadeinAndNavChange();
 }
 
 export default loadMenu;

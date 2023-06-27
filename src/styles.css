@@ -139,6 +139,7 @@ nav li {
     color: var(--text);
     background: var(--background);
     box-shadow: 0 3px 20px rgba(black, 0.2);
+    /* opacity: 0.4; */
 }
 
 #home_btn {
@@ -149,7 +150,7 @@ nav li {
 
 .first-section {
     position: relative;
-    background: url('../src/Images/marek.jpg');
+    background-image: linear-gradient(to bottom, rgba(32, 32, 43, 0.62), rgba(12, 10, 11, 0.83)), url('../src/Images/marek.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -157,6 +158,10 @@ nav li {
     height: 100vh;
 
 
+}
+
+.logo {
+    margin-top: 1rem;
 }
 
 .text_header {
@@ -201,30 +206,6 @@ nav li {
     font-family: 'Dongle', 'sans-serif';
     font-size: 2em;
 }
-
-/* .banny_header {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-/* .markus_img {
-    width: 100%;
-} */
-
-/* .paul_img {
-    width: 100%;
-} */
-
-/* .inside {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: var(--font-size);
-} */
-
-
 
 .fade_in {
     opacity: 0;
@@ -380,75 +361,6 @@ nav li {
     color: green;
 }
 
-/* .card {
-    display: flex;
-    margin: 5em;
-    width: 60%;
-    height: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, .20);
-}
-
-.maxycard_image {
-    background: url('../src/Images/paul.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10em;
-    max-width: 100%;
-}
-
-.card_text {
-    padding: 2rem;
-    background: #e9eb9c;
-}
-
-.card_text>h1 {
-    font-family: 'Rowdies', 'cursive';
-}
-
-.card_text>p {
-    font-family: 'Dongle', 'sans-serif';
-}
-
-.card_price {
-    font-size: 2rem;
-    color: #444;
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-}
-
-.card_btn {
-    cursor: pointer;
-    display: inline-block;
-    background-color: #000;
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 25px;
-}
-
-.card_btn:hover {
-    background: var(--background);
-    color: black;
-}
-
-.codedcard_image {
-    background: url('../src/Images/markus.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10em;
-    min-height: 100%;
-}
-
-.justme_image {
-    background: url('../src/Images/markus.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10em;
-    min-height: 100%;
-} */
-
 .bonus_div {
     display: flex;
     flex-direction: column;
@@ -464,6 +376,27 @@ nav li {
     padding: 10em;
     min-height: 100%;
 }
+
+/* -----------Contact---------- */
+
+ .contact {
+    background-image: linear-gradient(to bottom, rgba(32, 32, 43, 0.62), rgba(12, 10, 11, 0.83)), url("../src/Images/alexander.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 1rem;
+    width: 100vw;
+    height: 100vh;
+ }
+
+ .logo-div {
+    font-family: 'Great vibes','cursive';
+ }
 
 /* -----------Media Query--------- */
 
@@ -586,6 +519,11 @@ nav li {
         padding: 1em;
         font-size: 1.2em;
         transform: translateX(-50%);
+    }
+
+    .contact {
+        padding-top: 5rem;
+        font-size: 1.4rem;
     }
 
 

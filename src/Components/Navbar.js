@@ -1,11 +1,17 @@
 import loadHome from "./Home";
 import loadMenu from "./Menu";
+import LogoImg from "../Images/logo.svg";
+import loadContact from "./Contact";
 
 const createNavbar = () => {
   // const container = document.querySelector(".container");
   const header = document.createElement("header");
 
-  const headerH1 = document.createElement("h1");
+  const logoImg = new Image();
+  logoImg.src = LogoImg;
+
+  const logoContainer = document.createElement("div");
+  logoContainer.innerHTML = `<img src="../src/Images/logo.svg" alt="logo">`;
   const headerInput = document.createElement("input");
   const headerNav = document.createElement("nav");
   const headerUl = document.createElement("ul");
@@ -16,8 +22,8 @@ const createNavbar = () => {
   const headerLabel = document.createElement("label");
   const headerSpan = document.createElement("span");
 
-  headerH1.classList.add("header");
-  headerH1.textContent = "Bannycue";
+  logoContainer.classList.add("logo");
+  // headerH1.textContent = "Bannycue";
   headerInput.classList.add("nav-toggle");
   headerInput.id = "nav-toggle";
   headerInput.type = "checkbox";
@@ -36,8 +42,12 @@ const createNavbar = () => {
 
   headerAboutLi.id = "about_btn";
   headerAboutLi.textContent = "ABOUT US";
+
   headerContactLi.id = "contact_btn";
   headerContactLi.textContent = "CONTACT US";
+  headerContactLi.addEventListener("click", () => {
+    loadContact();
+  });
 
   headerLabel.classList.add("nav-toggle-label");
   headerLabel.htmlFor = "nav-toggle";
@@ -50,7 +60,7 @@ const createNavbar = () => {
 
   headerLabel.appendChild(headerSpan);
 
-  header.appendChild(headerH1);
+  header.appendChild(logoContainer);
   header.appendChild(headerInput);
   header.appendChild(headerNav);
   header.appendChild(headerLabel);
