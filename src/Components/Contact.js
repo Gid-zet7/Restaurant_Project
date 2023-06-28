@@ -10,8 +10,9 @@ const contact = () => {
 
   const contact = document.createElement("div");
   const lockupDiv = document.createElement("div");
-  lockupDiv.innerHTML = `
-        <img src="../src/Images/fullLockupColor.svg" alt="">
+  const lockupImg = document.createElement("div");
+  const texContainer = document.createElement("div");
+  texContainer.innerHTML += `
         <hr>
         <h1>Grab a Bite</h1>
     `;
@@ -26,6 +27,10 @@ const contact = () => {
     `;
   contact.classList.add("contact");
   lockupDiv.classList.add("logo-div");
+  lockupImg.classList.add("logo-img");
+
+  lockupDiv.appendChild(lockupImg);
+  lockupDiv.appendChild(texContainer);
 
   contact.appendChild(lockupDiv);
   contact.appendChild(locationDiv);

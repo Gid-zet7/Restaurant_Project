@@ -11,7 +11,6 @@ const createNavbar = () => {
   fullLockupB.src = fullLockup;
 
   const logoContainer = document.createElement("div");
-  logoContainer.innerHTML = ` <img src="../src/Images/fullLockup.svg" alt="">`;
   const headerInput = document.createElement("input");
   const headerNav = document.createElement("nav");
   const headerUl = document.createElement("ul");

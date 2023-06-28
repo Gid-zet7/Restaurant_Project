@@ -161,6 +161,12 @@ nav li {
 
 .logo {
     margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-image: url("../src/Images/fullLockup.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
 
 .text_header {
@@ -393,6 +399,14 @@ nav li {
     height: 100vh;
  }
 
+ .logo-img {
+    background-image: url("../src/Images/fullLockupColor.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 5rem;
+ }
+
  .logo-div {
     font-family: 'Great vibes','cursive';
  }
@@ -456,6 +470,10 @@ nav li {
     nav li {
         margin-left: 3em;
         margin-bottom: 0;
+    }
+
+    .logo {
+        padding: 2rem;
     }
 
     .second-section {
