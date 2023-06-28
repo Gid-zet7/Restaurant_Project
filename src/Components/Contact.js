@@ -11,7 +11,7 @@ const contact = () => {
   const contact = document.createElement("div");
   const lockupDiv = document.createElement("div");
   lockupDiv.innerHTML = `
-        <img src="../src/Images/Full-Lockup-Color.svg">
+        <img src="https://github.com/Gid-zet7/Restaurant_Project/blob/main/src/Images/Full-Lockup-Color.svg">
         <hr>
         <h1>Grab a Bite</h1>
     `;

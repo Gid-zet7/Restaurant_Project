@@ -11,7 +11,7 @@ const createNavbar = () => {
   fullLockupBlack.src = FullLockupBlack;
 
   const logoContainer = document.createElement("div");
-  logoContainer.innerHTML = `<img src="../src/Images/Full-Lockup-Black.svg">`;
+  logoContainer.innerHTML = `<img src="https://github.com/Gid-zet7/Restaurant_Project/blob/main/src/Images/Full-Lockup-Black.svg">`;
   const headerInput = document.createElement("input");
   const headerNav = document.createElement("nav");
   const headerUl = document.createElement("ul");
