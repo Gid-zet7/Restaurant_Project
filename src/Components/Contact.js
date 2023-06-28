@@ -1,17 +1,17 @@
-import FullLockupColor from "../Images/Full-Lockup-Color.svg";
+import fullLockupColor from "../Images/fullLockupColor.svg";
 import Alexander from "../Images/alexander.jpg";
 
 const contact = () => {
   const alexander = new Image();
   alexander.src = Alexander;
 
-  const fullLockup = new Image();
-  fullLockup.src = FullLockupColor;
+  const fullLockupC = new Image();
+  fullLockupC.src = fullLockupColor;
 
   const contact = document.createElement("div");
   const lockupDiv = document.createElement("div");
   lockupDiv.innerHTML = `
-        <img src="https://github.com/Gid-zet7/Restaurant_Project/blob/main/src/Images/Full-Lockup-Color.svg">
+        <img src="../src/Images/fullLockupColor.svg" alt="">
         <hr>
         <h1>Grab a Bite</h1>
     `;

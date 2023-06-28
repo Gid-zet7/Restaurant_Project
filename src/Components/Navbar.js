@@ -1,17 +1,17 @@
 import loadHome from "./Home";
 import loadMenu from "./Menu";
-import FullLockupBlack from "../Images/Full-Lockup-Black.svg";
+import fullLockup from "../Images/fullLockup.svg";
 import loadContact from "./Contact";
 
 const createNavbar = () => {
   // const container = document.querySelector(".container");
   const header = document.createElement("header");
 
-  const fullLockupBlack = new Image();
-  fullLockupBlack.src = FullLockupBlack;
+  const fullLockupB = new Image();
+  fullLockupB.src = fullLockup;
 
   const logoContainer = document.createElement("div");
-  logoContainer.innerHTML = `<img src="https://github.com/Gid-zet7/Restaurant_Project/blob/main/src/Images/Full-Lockup-Black.svg">`;
+  logoContainer.innerHTML = ` <img src="../src/Images/fullLockup.svg" alt="">`;
   const headerInput = document.createElement("input");
   const headerNav = document.createElement("nav");
   const headerUl = document.createElement("ul");
