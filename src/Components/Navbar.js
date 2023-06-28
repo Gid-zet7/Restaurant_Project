@@ -1,17 +1,17 @@
 import loadHome from "./Home";
 import loadMenu from "./Menu";
-import Lockup from "../Images/lockup.svg";
+import FullLockupBlack from "../Images/Full-Lockup-Black.svg";
 import loadContact from "./Contact";
 
 const createNavbar = () => {
   // const container = document.querySelector(".container");
   const header = document.createElement("header");
 
-  const lockup = new Image();
-  lockup.src = Lockup;
+  const fullLockupBlack = new Image();
+  fullLockupBlack.src = FullLockupBlack;
 
   const logoContainer = document.createElement("div");
-  logoContainer.innerHTML = `<img src="../src/Images/lockup.svg" alt="logo">`;
+  logoContainer.innerHTML = `<img src="../src/Images/Full-Lockup-Black.svg">`;
   const headerInput = document.createElement("input");
   const headerNav = document.createElement("nav");
   const headerUl = document.createElement("ul");

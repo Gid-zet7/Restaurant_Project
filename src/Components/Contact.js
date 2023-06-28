@@ -1,17 +1,17 @@
-import LockupColor from "../Images/lockupColor.svg";
+import FullLockupColor from "../Images/Full-Lockup-Color.svg";
 import Alexander from "../Images/alexander.jpg";
 
 const contact = () => {
   const alexander = new Image();
   alexander.src = Alexander;
 
-  const lockupColor = new Image();
-  lockupColor.src = LockupColor;
+  const fullLockup = new Image();
+  fullLockup.src = FullLockupColor;
 
   const contact = document.createElement("div");
-  const logoDiv = document.createElement("div");
-  logoDiv.innerHTML = `
-        <img src="../src/Images/lockupColor.svg" alt="logo">
+  const lockupDiv = document.createElement("div");
+  lockupDiv.innerHTML = `
+        <img src="../src/Images/Full-Lockup-Color.svg">
         <hr>
         <h1>Grab a Bite</h1>
     `;
@@ -25,9 +25,9 @@ const contact = () => {
         <h2>0573767116</h2>
     `;
   contact.classList.add("contact");
-  logoDiv.classList.add("logo-div");
+  lockupDiv.classList.add("logo-div");
 
-  contact.appendChild(logoDiv);
+  contact.appendChild(lockupDiv);
   contact.appendChild(locationDiv);
 
   return contact;
