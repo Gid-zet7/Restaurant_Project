@@ -139,7 +139,6 @@ nav li {
     color: var(--text);
     background: var(--background);
     box-shadow: 0 3px 20px rgba(black, 0.2);
-    /* opacity: 0.4; */
 }
 
 #home_btn {
@@ -150,7 +149,8 @@ nav li {
 
 .first-section {
     position: relative;
-    background-image: linear-gradient(to bottom, rgba(32, 32, 43, 0.62), rgba(12, 10, 11, 0.83)), url('../src/Images/marek.jpg');
+    background-image: 
+        linear-gradient(to bottom, rgba(32, 32, 43, 0.62), rgba(12, 10, 11, 0.83)), url('../src/Images/marek.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

@@ -1,17 +1,17 @@
-import LogoColor from "../Images/logo.svg";
+import LockupColor from "../Images/lockupColor.svg";
 import Alexander from "../Images/alexander.jpg";
 
 const contact = () => {
   const alexander = new Image();
   alexander.src = Alexander;
 
-  const logoColor = new Image();
-  logoColor.src = LogoColor;
+  const lockupColor = new Image();
+  lockupColor.src = LockupColor;
 
   const contact = document.createElement("div");
   const logoDiv = document.createElement("div");
   logoDiv.innerHTML = `
-        <img src="../src/Images/logoColor.svg" alt="logo">
+        <img src="../src/Images/lockupColor.svg" alt="logo">
         <hr>
         <h1>Grab a Bite</h1>
     `;
